@@ -5,7 +5,7 @@ class Person < ActiveRecord::Base
   has_many :employees, class_name: "Person", foreign_key: :manager_id
 
   def self.order_by_location_name
-    all
+    all.joins(:location).merge(Location.order_by_name)
   end
 
   def self.with_employees
