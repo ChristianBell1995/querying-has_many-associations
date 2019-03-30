@@ -74,3 +74,4 @@ This exercise is maintained and funded by
 
 The names and logos for Upcase and thoughtbot are registered trademarks of
 thoughtbot, inc.
+# querying-has_many-associations
