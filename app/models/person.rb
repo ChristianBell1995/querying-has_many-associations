@@ -9,10 +9,10 @@ class Person < ActiveRecord::Base
   end
 
   def self.with_employees
-    all
+    all.where(manager: nil)
   end
 
   def self.with_employees_order_by_location_name
-    all
+    all.
   end
 end
