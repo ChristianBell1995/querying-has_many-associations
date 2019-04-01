@@ -13,6 +13,6 @@ class Person < ActiveRecord::Base
   end
 
   def self.with_employees_order_by_location_name
-    all.
+    all.from(Person.with_employees, :people).order_by_location_name
   end
 end
